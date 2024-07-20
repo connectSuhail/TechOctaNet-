@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation-name: ani;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+}
+.container {
+    background: transparent;
+    padding: 50px;
+    border-radius: 8px;
+    animation-name: ani;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    
+    
+    
+  }
+  
+  @keyframes ani {
+    0%   {background-color: rgba(209, 153, 148, 0.793);}
+    25%  {background-color: rgba(197, 197, 127, 0.863);}
+    50%  {background-color: rgb(179, 179, 242);}
+    75%  {background-color: rgb(70, 74, 73);}
+    100% {background-color: rgb(159, 197, 159);}
+  }
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    
+}
+
+form button {
+    
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    
+}
+
+form button:hover {
+    background-color: #218838;
+}
+ul {
+    list-style:none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+ul li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+ul li button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+ul li button.complete {
+    color: #28a745;
+}
+
+ul li button.complete:hover {
+    color: #218838;
+}
+
+ul li button.delete {
+    color: #dc3545;
+}
+
+ul li button.delete:hover {
+    color: #c82333;
+}
